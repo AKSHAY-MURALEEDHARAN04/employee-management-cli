@@ -1,8 +1,0 @@
-[
-  "tests/test_employee_manager.py::test_add_employee",
-  "tests/test_employee_manager.py::test_validate_age",
-  "tests/test_employee_manager.py::test_validate_email",
-  "tests/test_employee_manager.py::test_validate_employee_id",
-  "tests/test_employee_manager.py::test_validate_name",
-  "tests/test_employee_manager.py::test_validate_salary"
-]
