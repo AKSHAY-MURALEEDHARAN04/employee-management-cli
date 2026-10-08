@@ -1,0 +1,38 @@
+[
+    {
+        "id": "EMP100",
+        "name": "Test User",
+        "age": 25,
+        "department": "IT",
+        "role": "Data Analyst",
+        "salary": 50000.0,
+        "email": "test@example.com"
+    },
+    {
+        "id": "EMP001",
+        "name": "Akshay",
+        "age": 21,
+        "department": "IT",
+        "role": "Data Scientist",
+        "salary": 30000.0,
+        "email": "akshay@gmail.com"
+    },
+    {
+        "id": "EMP007",
+        "name": "RONALDO",
+        "age": 41,
+        "department": "TECH SUPPORT",
+        "role": "HEAD",
+        "salary": 96000.0,
+        "email": "CR@gmail.com"
+    },
+    {
+        "id": "EMP010",
+        "name": "MESSI",
+        "age": 39,
+        "department": "CRM",
+        "role": "BPO",
+        "salary": 23454.0,
+        "email": "LM10@GMAIL.COM"
+    }
+]
