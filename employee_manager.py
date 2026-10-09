@@ -5,7 +5,7 @@ from logger import logger
 
 DATA_FILE = "data/employees.json"
 
-def load_employees():
+def load_employees(): 
     try:
         if not os.path.exists(DATA_FILE):
             return []
@@ -49,10 +49,7 @@ def add_employee(employees):
     # Employee ID validation
     while True:
         try:
-            emp_id = validate_employee_id(
-                input("Enter employee ID: ")
-            )
-
+            emp_id = validate_employee_id(input("Enter employee ID: "))
             duplicate = False
 
             for employee in employees:
@@ -62,59 +59,48 @@ def add_employee(employees):
 
             if duplicate:
                 print("Error: Employee ID already exists.")
-                logger.warning(
-                    f"Duplicate employee ID attempted: {emp_id}"
-                )
+                logger.warning(f"Duplicate employee ID attempted: {emp_id}")
                 continue
-
             break
 
         except ValueError as e:
             print(f"Invalid employee ID: {e}")
 
     # Employee name
-    name = validate_name(
-        input("Enter employee name: ")
-    )
+    name = validate_name(input("Enter employee name: "))
 
     # Age validation
     while True:
         try:
-            age = validate_age(
-                input("Enter employee age: ")
-            )
+            age = validate_age(input("Enter employee age: "))
             break
 
         except ValueError as e:
             print(f"Invalid age: {e}")
 
     # Department
-    department = input(
-        "Enter department: "
-    ).strip()
+    department = input("Enter department: ").strip()
+    
 
     # Role
-    role = input(
-        "Enter role: "
-    ).strip()
+    role = input("Enter role: ").strip()
+
+
 
     # Salary validation
     while True:
         try:
-            salary = validate_salary(
-                input("Enter salary: ")
-            )
+            salary = validate_salary(input("Enter salary: "))
             break
 
         except ValueError as e:
             print(f"Invalid salary: {e}")
 
+
     # Email validation
     while True:
         try:
-            email = validate_email(
-                input("Enter email: ")
-            )
+            email = validate_email(input("Enter email: "))
             break
 
         except ValueError as e:

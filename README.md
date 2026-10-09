@@ -55,6 +55,7 @@ employee_management_cli/
 
 - Python 3.13 or higher
 - pip
+- pytest
 
 ## Setup
 
